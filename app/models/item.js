@@ -6,6 +6,7 @@ export default DS.Model.extend({
   price: DS.attr(),
   inventory: DS.attr(),
   image: DS.attr(),
+  numberInCart: DS.attr(),
 
   shoppingCart: Ember.inject.service(),
   inCart: Ember.computed('shoppingCart.items.[]', function(){

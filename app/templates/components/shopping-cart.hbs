@@ -1,6 +1,15 @@
 <h2>My Cart:</h2>
 {{#each shoppingCart.items as |item|}}
-  <p>{{item.name}} - {{item.price}}<button class="delete" {{action 'removeFromCart' item}}><i class="trash icon"></i></button></p> 
+  <p>
+    {{item.name}}
+    <div class="ui buttons">
+      <button class="ui button" {{action "subtractOne" item}}>-</button>
+      <div class="or" data-text={{item.numberInCart}}></div>
+      <button class="ui positive button" {{action "addOne" item}}>+</button>
+    </div>
+    x {{item.price}}
+    <button class="delete" {{action 'removeFromCart' item}}><i class="trash icon"></i></button>
+  </p>
 {{/each}}
 
 <h4>Total: ${{shoppingCart.price}}</h4>
