@@ -41,9 +41,41 @@
   {
     "name": "RoboHubby",
     "description": "Hey Girl",
-    "price": "20,009.99",
+    "price": "20009.99",
     "inventory": 1,
     "image": "https://s-media-cache-ak0.pinimg.com/originals/59/97/16/599716101cdf69b7eb6aba416a24758f.jpg",
+    "numberInCart": 0
+  },
+  {
+    "name": "Dalek",
+    "description": "Dr. Who?",
+    "price": "119.99",
+    "inventory": 1000,
+    "image": "http://www.careyblyton.com/media/tv/doctorwho/dalek256.jpg",
+    "numberInCart": 0
+  },
+  {
+    "name": "RoboOverlord",
+    "description": "I'll be back",
+    "price": "100009.99",
+    "inventory": 1,
+    "image": "http://cdn1-www.comingsoon.net/assets/uploads/gallery/terminator-genisys-1407342180/terminator-genisys-028.jpg",
+    "numberInCart": 0
+  },
+  {
+    "name": "Walle",
+    "description": "Greatest trash compactor. Will get everything but twinkies and roaches",
+    "price": "29.99",
+    "inventory": 10,
+    "image": "http://www.theplace2.ru/archive/wall_e/img/WALL-E_03.jpg",
+    "numberInCart": 0
+  },
+  {
+    "name": "DataBot",
+    "description": "Exploratory bot that collects environmental data and makes assessments",
+    "price": "23009.99",
+    "inventory": 1,
+    "image": "http://vignette1.wikia.nocookie.net/disney/images/6/67/3625885-4897998087-Wall-.jpg/revision/latest?cb=20140429123418",
     "numberInCart": 0
   }]
 }

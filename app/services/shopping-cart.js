@@ -8,13 +8,15 @@ export default Ember.Service.extend({
     return this.get('items').includes(item);
   },
   add(item) {
-    if(item.get('inCart') === false && item.get('inventory') > 0) {
-      this.get('items').pushObject(item);
+    if (item.get('inventory') > 0) {
+      if(item.get('inCart') === false) {
+        this.get('items').pushObject(item);
+      }
+      item.set('inventory', (item.get('inventory')-1));
+      item.set('numberInCart', item.get('numberInCart') + 1);
+      var newPrice = parseFloat(this.get('price')) + parseFloat(item.get('price'));
+      this.set('price', newPrice.toFixed(2));
     }
-    item.set('inventory', (item.get('inventory')-1));
-    item.set('numberInCart', item.get('numberInCart') + 1);
-    var newPrice = parseFloat(this.get('price')) + parseFloat(item.get('price'));
-    this.set('price', newPrice.toFixed(2));
   },
   remove(item) {
     if (item.get('numberInCart') === 1) {

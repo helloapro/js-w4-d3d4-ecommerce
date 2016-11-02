@@ -1,6 +1,51 @@
 @import "bootstrap";
 
+.jumbotron {
+  padding-bottom: 10px;
+
+  h1 {
+    text-align: center;
+  }
+}
+
 .delete {
   background: transparent;
   border: none;
+}
+
+.card {
+  width: 200px !important;
+  margin: 5px !important;
+
+  .image {
+    height: 200px !important;
+    background: rgba(0, 0, 0, 0.0) !important;
+  }
+
+  .description {
+    height: 50px;
+  }
+
+  img {
+
+    position: absolute;
+    clip: rect(3px,200px,200px,0px) !important;
+  }
+}
+
+.ui.buttons .or {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.ui.positive.button {
+  background: #c9b6f9;
+
+  &:focus {
+    background: #c9b6f9;
+  }
+
+  &:hover {
+    background: #9d8ace;
+  }
 }
