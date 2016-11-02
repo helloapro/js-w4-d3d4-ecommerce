@@ -1,0 +1,23 @@
+<div class='col-sm-3'>
+  <div class="ui card">
+    <div class="image">
+      <img class="item-img" src={{item.image}}>
+    </div>
+    <div class="content">
+      <a class="header">{{item.name}}</a>
+      <div class="meta">
+          <span class="date">{{in-stock item.inventory}}</span>
+      </div>
+      <div class="description">
+        {{item.description}}
+      </div>
+    </div>
+    <div class="extra content">
+        <i class="cart icon"></i>
+        {{item.price}}
+        {{#if inStock}}
+        <button class='btn pull-right' {{action 'addToCart' item}}>Buy</button>
+        {{/if}}
+    </div>
+  </div>
+</div>

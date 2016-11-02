@@ -1,0 +1,43 @@
+{ "items": [{
+    "name": "RoboMaid",
+    "description": "This bot will clean your house.",
+    "price": "299.99",
+    "inventory": 3,
+    "image": "https://cdn.vectorstock.com/i/composite/64,32/robot-maid-vector-6432.jpg"
+  },
+  {
+    "name": "ChefBot",
+    "description": "Preprogrammed with thousands of recipes!",
+    "price": "149.99",
+    "inventory": 5,
+    "image": "http://img01.ibnlive.in/ibnlive/uploads/2015/09/robot-chef.jpg"
+  },
+  {
+    "name": "CamBot",
+    "description": "Getting your best double-chin selfie",
+    "price": "99.99",
+    "inventory": 4,
+    "image": "https://thumbs.dreamstime.com/x/robotic-camera-16310269.jpg"
+  },
+  {
+    "name": "RoboWalker",
+    "description": "When Princess needs to piddle, but the Queen needs more shut-eye.",
+    "price": "999.99",
+    "inventory": 5,
+    "image": "http://holykaw.alltop.com/wp-content/uploads/2011/05/26186681-media_httpsingularity_rHxAm.jpg"
+  },
+  {
+    "name": "WineBot",
+    "description": "Uncork with this little guy!",
+    "price": "19.99",
+    "inventory": 15,
+    "image": "http://www.bitrebels.com/wp-content/uploads/2013/01/corkers-cork-robots-wine-4.jpg"
+  },
+  {
+    "name": "RoboHubby",
+    "description": "Hey Girl",
+    "price": "20,009.99",
+    "inventory": 1,
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/59/97/16/599716101cdf69b7eb6aba416a24758f.jpg"
+  }]
+}
