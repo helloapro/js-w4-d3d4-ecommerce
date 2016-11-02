@@ -3,7 +3,7 @@
     <img class="item-image" src={{item.image}}>
   </div>
   <div class="content">
-    <a class="header">{{item.name}}</a>
+    {{#link-to 'item' item.id}}<h4 class="header">{{item.name}}</h4>{{/link-to}}
     <div class="meta">
         <span class="date">{{in-stock item.inventory}}</span>
     </div>
