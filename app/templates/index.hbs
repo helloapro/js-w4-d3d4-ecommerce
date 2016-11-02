@@ -1,8 +1,9 @@
-<div class="row">
-  <div class="col-sm-9">
-    {{item-list items=model}}
-  </div>
-  <div class="col-sm-3 well">
-    {{shopping-cart}}
+
+<div class="ui sidebar inverted vertical menu">
+  {{shopping-cart}}
+</div>
+<div class="pusher">
+  <div class='container'>
+    {{item-list items=model showSidebar="showSidebar"}}
   </div>
 </div>

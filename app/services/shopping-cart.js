@@ -26,6 +26,9 @@ export default Ember.Service.extend({
     item.set('numberInCart', item.get('numberInCart') - 1);
     var newPrice = parseFloat(this.get('price')) - parseFloat(item.get('price'));
     this.set('price', newPrice.toFixed(2));
+    if (this.get('price') == 0) {
+      $('.ui.sidebar').sidebar('hide');
+    }
   },
   delete(item) {
     this.get('items').removeObject(item);
@@ -33,5 +36,8 @@ export default Ember.Service.extend({
     var newPrice = parseFloat(this.get('price')) - parseFloat(item.get('price') * item.get('numberInCart'));
     this.set('price', newPrice.toFixed(2));
     item.set('numberInCart', 0);
+    if (this.get('price') == 0) {
+      $('.ui.sidebar').sidebar('hide');
+    }
   }
 });

@@ -1,11 +1,26 @@
 @import "bootstrap";
 
+body {
+  background: #e0e0e0;
+}
+
 .jumbotron {
   padding-bottom: 10px;
+  background: white;
 
   h1 {
     text-align: center;
   }
+}
+
+.sidebar {
+  background: white;
+  margin-top: -30px;
+  padding: 30px;
+}
+
+.well {
+  background: white;
 }
 
 .delete {
