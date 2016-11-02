@@ -1,7 +1,7 @@
 <h2>My Cart:</h2>
 <hr>
 {{#each shoppingCart.items as |item|}}
-<h4>{{item.name}}</h4>
+  <h4>{{item.name}}</h4>
   <p>
     <div class="ui buttons">
       <button class="ui button" {{action "subtractOne" item}}>-</button>
