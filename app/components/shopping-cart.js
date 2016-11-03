@@ -12,6 +12,18 @@ export default Ember.Component.extend({
     },
     removeFromCart(item) {
       this.get('shoppingCart').delete(item);
+    },
+    checkout() {
+      var _this = this;
+      this.get('shoppingCart.items').forEach(function(item) {
+        item.set('numberInCart', 0);
+        item.save();
+        Ember.$('.ui.sidebar').sidebar('hide');
+        Ember.$('.container').removeClass('shrink');
+        _this.get('shoppingCart.items').removeObject(item);
+        _this.set('shoppingCart.price', 0);
+      });
+      $('.ui.modal').modal('show');
     }
   }
 });

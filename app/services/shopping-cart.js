@@ -28,6 +28,7 @@ export default Ember.Service.extend({
     this.set('price', newPrice.toFixed(2));
     if (this.get('price') == 0) {
       Ember.$('.ui.sidebar').sidebar('hide');
+      Ember.$('.container').removeClass('shrink');
     }
   },
   delete(item) {
@@ -38,6 +39,7 @@ export default Ember.Service.extend({
     item.set('numberInCart', 0);
     if (this.get('price') == 0) {
       Ember.$('.ui.sidebar').sidebar('hide');
+      Ember.$('.container').removeClass('shrink');
     }
   }
 });

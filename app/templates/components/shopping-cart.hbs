@@ -13,4 +13,5 @@
   </p>
   <hr>
 {{/each}}
-<h4 class="pull-right">Total: ${{shoppingCart.price}}</h4>
+<h4 class="text-center">Total: ${{shoppingCart.price}}</h4>
+<button {{action "checkout"}} class='btn btn-primary btn-block'>Checkout</button>

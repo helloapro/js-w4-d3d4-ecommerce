@@ -3,6 +3,11 @@
     <img class="item-image" src={{item.image}}>
   </div>
   <div class="content">
+    <p class='pull-right'>
+      {{#if item.totalRating}}
+        ({{item.reviews.length}} reviews) {{ui-rating initialRating=item.aveRating maxRating=5 interactive=false}}
+      {{/if}}
+    </p>
     {{#link-to 'item' item.id}}<h4 class="header">{{item.name}}</h4>{{/link-to}}
     <div class="meta">
         <span class="date">{{in-stock item.inventory}}</span>

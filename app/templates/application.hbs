@@ -8,12 +8,18 @@
   {{outlet}}
 </div>
 
-
-{{!-- <div class='row'>
-  <div class='col-sm-9'> --}}
-
-  {{!-- </div>
-  <div class="col-sm-3 sidebar">
-    {{shopping-cart}}
+{{#ui-modal name="confirmation" class="profile"}}
+  <i class="close icon"></i>
+  <div class="header">
+    Order Confirmation
   </div>
-</div> --}}
+  <div class="image content">
+    <div class="ui medium image">
+      <img src="http://www.hello-innovation.com/uploads/pics/robot_hello.png">
+    </div>
+    <div class="description">
+      <div class="ui header">Thank you for your purchase!</div>
+      <p>Your order has been received by our warehouse bots, and you will receive your shipment shortly.</p>
+    </div>
+  </div>
+{{/ui-modal}}
