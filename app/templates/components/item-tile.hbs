@@ -1,6 +1,6 @@
 <div class="ui card">
   <div class="image">
-    <img class="item-image" src={{item.image}}>
+    {{#link-to 'item' item.id}}<img class="item-image" src={{item.image}}>{{/link-to}}
   </div>
   <div class="content">
     <p class='pull-right'>
@@ -20,7 +20,7 @@
       <i class="cart icon"></i>
       {{item.price}}
       {{#if inStock}}
-      <button class='btn pull-right' {{action 'addToCart' item}}>Buy</button>
+      <button class='btn btn-info pull-right' {{action 'addToCart' item}}>Buy</button>
       {{/if}}
   </div>
 </div>

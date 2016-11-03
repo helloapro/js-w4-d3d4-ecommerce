@@ -11,6 +11,9 @@ export default Ember.Component.extend({
         date: moment(),
         item: this.get('item')
       };
+      this.set('author', '');
+      this.set('content', '');
+      this.set('rating', 0);
       this.sendAction('addReview', params);
     }
   }
