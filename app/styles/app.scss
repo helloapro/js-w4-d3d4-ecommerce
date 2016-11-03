@@ -1,8 +1,5 @@
 @import "bootstrap";
 
-body {
-}
-
 .pusher .pusher {
   padding-top: 30px;
 }
@@ -78,11 +75,6 @@ body {
   .description {
     height: 50px;
   }
-
-  img {
-    // position: absolute;
-
-  }
 }
 
 .cart-quantity {
@@ -115,4 +107,17 @@ body {
   &:hover {
     background: #9d8ace;
   }
+}
+
+.faded {
+  color: darkGray;
+}
+
+#review-display {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#sortReviews {
+  width: 20%;
 }

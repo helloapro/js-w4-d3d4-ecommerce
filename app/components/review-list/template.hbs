@@ -1,5 +1,12 @@
 <div>
+  <select class='form-control pull-right' id="sortReviews" {{action 'updateSort' on='change'}}>
+    <option value="rating:desc">Highest Rated</option>
+    <option value="rating:asc">Lowest Rated</option>
+    <option value="date:desc">Most Recent</option>
+    <option value="date:asc">Oldest</option>
+  </select>
   <h3>Reviews</h3>
+  <br>
   {{#each sortedReviews as |review|}}
     {{review-tile review=review}}
   {{/each}}

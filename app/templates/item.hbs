@@ -1,5 +1,7 @@
 <div class='container'>
   {{item-page item=model showSidebar="showSidebar"}}
-  {{review-list item=model}}
-  {{review-new item=model addReview="addReview"}}
+  <div id="review-display">
+    {{review-list item=model}}
+    {{review-new item=model addReview="addReview"}}
+  </div>
 </div>
