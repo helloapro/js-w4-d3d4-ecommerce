@@ -1,8 +1,12 @@
 <div class='jumbotron'>
-  <h1>RoboShop</h1>
+  {{#link-to 'index'}}<h1>RoboShop</h1>{{/link-to}}
 </div>
-{{outlet}}
-
+<div class="ui sidebar vertical menu">
+  {{shopping-cart}}
+</div>
+<div class="pusher">
+  {{outlet}}
+</div>
 
 
 {{!-- <div class='row'>

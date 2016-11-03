@@ -1,15 +1,26 @@
 @import "bootstrap";
 
 body {
-  background: #e0e0e0;
+}
+
+.pusher .pusher {
+  padding-top: 30px;
 }
 
 .jumbotron {
   padding-bottom: 10px;
-  background: white;
 
   h1 {
     text-align: center;
+  }
+}
+
+.pusher {
+  padding-top: 0 !important;
+
+  .container {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -26,6 +37,9 @@ body {
 .delete {
   background: transparent;
   border: none;
+  &:hover {
+    color: red;
+  }
 }
 
 .content a {
@@ -33,7 +47,7 @@ body {
 }
 
 .card {
-  width: 200px !important;
+  width: 275px !important;
   margin: 5px !important;
 
   .image {
@@ -48,8 +62,12 @@ body {
   img {
 
     position: absolute;
-    clip: rect(0px,200px,225px,0px) !important;
+    clip: rect(0px,275px,225px,0px) !important;
   }
+}
+
+.cart-quantity {
+  font-size: 1.5em !important;
 }
 
 .ui.buttons .or {
@@ -57,8 +75,19 @@ body {
   font-size: 1.25rem;
 }
 
+.ui.negative.button, .ui.negative.button:focus {
+  background: darkGray;
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+.ui.negative.button:hover:hover {
+  background: gray;
+}
+
 .ui.positive.button {
   background: #c9b6f9;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
 
   &:focus {
     background: #c9b6f9;

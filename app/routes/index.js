@@ -6,8 +6,8 @@ export default Ember.Route.extend({
   },
   actions: {
     showSidebar() {
-      $('.ui.sidebar').sidebar('setting', { dimPage: false, closable: false});
-      $('.ui.sidebar').sidebar('show');
+      Ember.$('.ui.sidebar').sidebar('setting', { dimPage: false, closable: false});
+      Ember.$('.ui.sidebar').sidebar('show');
     }
   }
 });

@@ -2,9 +2,9 @@
 <hr>
 {{#each shoppingCart.items as |item|}}
   <h4>{{item.name}}</h4>
-  <p>
+  <p class='cart-quantity'>
     <div class="ui buttons">
-      <button class="ui button" {{action "subtractOne" item}}>-</button>
+      <button class="ui negative button" {{action "subtractOne" item}}>-</button>
       <div class="or" data-text={{item.numberInCart}}></div>
       <button class="ui positive button" {{action "addOne" item}}>+</button>
     </div>

@@ -1,4 +1,18 @@
 <h1>{{item.name}}</h1>
-<p>
-  {{item.description}}
-</p>
+<h3>{{item.description}}</h3>
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <img class="img-responsive" src="{{item.image}}" alt="" />
+  </div>
+  <div class="col-sm-5">
+    <p>{{item.features}}</p>
+  </div>
+  <div class="col-sm-3">
+    <h4 class="text-center">Price: ${{item.price}}</h4>
+    <h5 class="text-center">{{in-stock item.inventory}}</h5>
+    {{#if inStock}}
+    <button class="btn btn-block btn-info" name="button" {{action 'addToCart' item}}>Add to Cart!</button>
+    {{/if}}
+  </div>
+</div>
