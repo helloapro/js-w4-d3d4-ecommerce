@@ -6,6 +6,7 @@
     <img class="img-responsive" src="{{item.image}}" alt="" />
   </div>
   <div class="col-sm-5">
+    {{ui-rating initialRating=item.aveRating maxRating=5}}{{item.aveRating}}
     <p>{{item.features}}</p>
   </div>
   <div class="col-sm-3">

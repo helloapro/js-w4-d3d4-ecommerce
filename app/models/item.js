@@ -9,6 +9,11 @@ export default DS.Model.extend({
   image: DS.attr(),
   numberInCart: DS.attr(),
   reviews: DS.hasMany('review', {async:true}),
+  totalRating: DS.attr(),
+  aveRating: Ember.computed('totalRating', function() {
+    console.log(this.get('totalRating') + ', ' + this.get('reviews.length'));
+    return parseInt(this.get('totalRating')/this.get('reviews.length'));
+  }),
 
   shoppingCart: Ember.inject.service(),
   inCart: Ember.computed('shoppingCart.items.[]', function(){

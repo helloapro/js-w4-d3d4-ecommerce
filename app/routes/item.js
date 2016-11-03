@@ -14,6 +14,7 @@ export default Ember.Route.extend({
       var item = params.item;
       item.get('reviews').addObject(newReview);
       newReview.save().then(function() {
+        item.set('totalRating', item.get('totalRating') + params.rating);
         return item.save();
       });
       this.transitionTo('item', item);

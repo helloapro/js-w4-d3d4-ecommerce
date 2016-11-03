@@ -5,7 +5,8 @@
     "price": "299.99",
     "inventory": 3,
     "image": "https://cdn.vectorstock.com/i/composite/64,32/robot-maid-vector-6432.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "ChefBot",
@@ -14,7 +15,8 @@
     "price": "149.99",
     "inventory": 5,
     "image": "http://img01.ibnlive.in/ibnlive/uploads/2015/09/robot-chef.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "CamBot",
@@ -23,7 +25,8 @@
     "price": "99.99",
     "inventory": 4,
     "image": "https://thumbs.dreamstime.com/x/robotic-camera-16310269.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "RoboWalker",
@@ -32,7 +35,8 @@
     "price": "999.99",
     "inventory": 5,
     "image": "http://holykaw.alltop.com/wp-content/uploads/2011/05/26186681-media_httpsingularity_rHxAm.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "WineBot",
@@ -41,7 +45,8 @@
     "price": "19.99",
     "inventory": 15,
     "image": "http://www.bitrebels.com/wp-content/uploads/2013/01/corkers-cork-robots-wine-4.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "RoboHubby",
@@ -51,7 +56,8 @@
     "price": "20009.99",
     "inventory": 1,
     "image": "https://s-media-cache-ak0.pinimg.com/originals/59/97/16/599716101cdf69b7eb6aba416a24758f.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "Dalek",
@@ -60,7 +66,8 @@
     "price": "119.99",
     "inventory": 1000,
     "image": "http://www.careyblyton.com/media/tv/doctorwho/dalek256.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "RoboOverlord",
@@ -69,7 +76,8 @@
     "price": "100009.99",
     "inventory": 1,
     "image": "http://cdn1-www.comingsoon.net/assets/uploads/gallery/terminator-genisys-1407342180/terminator-genisys-028.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "Walle",
@@ -78,7 +86,8 @@
     "price": "29.99",
     "inventory": 10,
     "image": "http://www.theplace2.ru/archive/wall_e/img/WALL-E_03.jpg",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   },
   {
     "name": "DataBot",
@@ -87,6 +96,7 @@
     "price": "23009.99",
     "inventory": 1,
     "image": "http://vignette1.wikia.nocookie.net/disney/images/6/67/3625885-4897998087-Wall-.jpg/revision/latest?cb=20140429123418",
-    "numberInCart": 0
+    "numberInCart": 0,
+    "totalRating": 0
   }]
 }
